@@ -1,0 +1,50 @@
+/*all document*/
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3, h4, h5 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 12px;
+}
+
+/*svg*/
+path {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 1000;
+  animation: dash 30s linear;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/*animation coeur*/
+.heart {
+  width: 100px;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+}
+.heart.is-active {
+  transition-duration: 1s;
+  background-position: -2800px 0;
+}
+
+/*animation coeur fin*/
+
+/*# sourceMappingURL=style.css.map */
