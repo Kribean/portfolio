@@ -26,7 +26,7 @@ fetch(API_URL, {
       divProjet.innerHTML += `<div class="card m-2" style="width: 18rem;">
       <div class="card-body">
         <h3 class="card-title">${element.name}</h3>
-        <p class="card-text">Le language principale utilisé pour ce projet est ${element.language}</p>
+        <p class="card-text">Le language principale utilisé pour ce projet est <span class="btn btn-warning">${element.language}</span></p>
         <h3>Description du projet</h3>
         <p>${element.description}</p>
         <a href="${element.html_url}" class="btn btn-success h3" target="_blank">Accéder au projet</a>
