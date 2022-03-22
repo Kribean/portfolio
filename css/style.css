@@ -1,20 +1,22 @@
 /*all document*/
-h1 {
-  font-size: 24px;
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
 }
 
-h2 {
-  font-size: 16px;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
-h3, h4, h5 {
-  font-size: 14px;
-}
-
-p {
-  font-size: 12px;
-}
-
 /*svg*/
 path {
   stroke-dasharray: 10000;
@@ -25,9 +27,11 @@ path {
 @keyframes dash {
   from {
     stroke-dashoffset: 10000;
+    stroke: #ffffff;
   }
   to {
     stroke-dashoffset: 0;
+    stroke: #000000;
   }
 }
 /*animation coeur*/
